@@ -4,7 +4,7 @@
  * Plugin Name: LDC2020 Blocks
  * Description: Gutenberg Blocks for LDC2020 Theme.
  * Author: Simplicity Partners
- * Text Domain: ldc2020-blocks
+ * Text Domain: michel-blocks
  */
 
 if (!defined('ABSPATH')) {
@@ -19,9 +19,9 @@ function ldc_register_dynamic_block($block, $options = array())
         'ldc/' . $block,
         array_merge(
             array(
-                'editor_script' => 'ldc2020-blocks-editor-script',
-                'editor_style' => 'ldc2020-blocks-editor-style',
-                // 'style' => 'ldc2020-blocks-style'
+                'editor_script' => 'michel-blocks-editor-script',
+                'editor_style' => 'michel-blocks-editor-style',
+                // 'style' => 'michel-blocks-style'
             ),
             $options
         )
@@ -32,7 +32,7 @@ function ldc2020_blocks_register()
 {
 
     wp_register_script(
-        'ldc2020-blocks-editor-script',
+        'michel-blocks-editor-script',
         plugins_url('dist/js/editor.blocks.js', __FILE__),
         array('wp-blocks', 'wp-element', 'wp-editor', 'wp-components'),
         false,
@@ -40,15 +40,15 @@ function ldc2020_blocks_register()
     );
 
     wp_register_style(
-        'ldc2020-blocks-editor-style',
+        'michel-blocks-editor-style',
         plugins_url('dist/css/blocks.editor.css', __FILE__),
-        array("ldc2020-blocks-style")
+        array("michel-blocks-style")
     );
 
     /* I'm deferring this style to optimize the pageload
 
     wp_register_style(
-        'ldc2020-blocks-style',
+        'michel-blocks-style',
         plugins_url('dist/css/blocks.style.css', __FILE__),
         array()
     );
@@ -64,14 +64,14 @@ add_action('init', 'ldc2020_blocks_register');
 function ldc2020_blocks_load_scripts_and_styles() {
     
     // register loadCSS
-    wp_register_script( 'ldc2020-blocks-load-css-async', plugins_url('src/js/loadCSS.js', __FILE__), array(), '', false );
+    wp_register_script( 'michel-blocks-load-css-async', plugins_url('src/js/loadCSS.js', __FILE__), array(), '', false );
     
     // enqueue loadCSS
-    wp_enqueue_script( 'ldc2020-blocks-load-css-async' );
+    wp_enqueue_script( 'michel-blocks-load-css-async' );
 
     // send vars from php to js
-    $translation_array = array( 'plugin_path' => plugins_url() . "/ldc2020-blocks" );
-    wp_localize_script( 'ldc2020-blocks-load-css-async', 'plugin_vars', $translation_array );    
+    $translation_array = array( 'plugin_path' => plugins_url() . "/michel-blocks" );
+    wp_localize_script( 'michel-blocks-load-css-async', 'plugin_vars', $translation_array );    
     
 }
 
@@ -83,7 +83,7 @@ function ldc2020_blocks_assets_frontend()
     if ( !is_admin() ) {
         // Enqueue Frontend blocks JS
         wp_enqueue_script(
-            'ldc2020-blocks-frontend-js',
+            'michel-blocks-frontend-js',
             plugins_url('dist/js/frontend.blocks.js', __FILE__),
             ['wp-blocks', 'wp-element', 'wp-editor', 'wp-components', 'wp-api'],
             filemtime( plugin_dir_path(__FILE__) . 'dist/js/frontend.blocks.js' ),
@@ -111,7 +111,7 @@ function remove_guten_wrapper_styles( $settings ) {
 }
 
 function ldc_acf_add_google_map_api_key( $api ){
-	$api['key'] = 'AIzaSyDBVV6e4Afldka51vqFgaipCf08YOP4XWs';
+	$api['key'] = 'GOOGLE_API_HERE';
 	return $api;
 }
 
