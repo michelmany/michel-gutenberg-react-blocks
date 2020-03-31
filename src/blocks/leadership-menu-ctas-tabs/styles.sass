@@ -1,0 +1,615 @@
+.wp-block-ldc-leadership-menu-ctas-tabs
+
+    &__tabs-menu
+
+        .tab-content
+            background: #fff
+
+
+        .nav.nav-pills
+            border-bottom: 1px solid #D8D8D8
+            @media (min-width: 1200px)
+                max-width: 1110px
+                margin-left: auto
+                margin-right: auto
+
+            .nav-link
+                border-radius: 0
+                border: 0
+                display: flex
+                align-items: center
+                justify-content: center
+                @extend %font-title
+                font-size: 18px
+                line-height: 1
+                color: rgba(#2E2E2E, 0.4)
+                letter-spacing: 0
+                text-align: center
+                width: 50%
+                padding: 10px
+                border-bottom: 2px solid transparent
+                outline: none
+                bottom: -1px
+
+                @media (min-width: 768px)
+                    font-size: 26px
+                    padding: 17px
+                    border-bottom-width: 3px
+                    bottom: -2px
+
+                @media (min-width: 992px)
+                    font-size: 30px
+
+                @media (min-width: 1200px)
+                    font-size: 34px
+
+
+                &.active,
+                &:hover
+                    color: #2E2E2E
+                    border-bottom: 2px solid #363636
+                    background: #fff
+                    outline: 0
+
+                    @media (min-width: 768px)
+                        border-bottom-width: 3px
+
+                &:focus
+                &:active
+                    outline: 0
+
+    &__featured-person
+        background: #F3F3F3
+        margin-bottom: 50px
+
+        @media (min-width: 768px)
+            display: flex
+            min-height: 385px
+
+        @media (min-width: 992px)
+            min-height: 430px
+
+        @media (min-width: 1200px)
+            min-height: 460px
+
+        &:hover
+            .featured-person__image
+                transform: scale(1)
+
+        .featured-person
+
+            &__image-container
+                cursor: pointer
+                overflow: hidden
+                width: 100%
+                background: gray
+                position: relative
+
+                @media (max-width: 767.98px)
+                    height: 305px
+
+                @media (min-width: 768px)
+                    width: 296px
+
+                @media (min-width: 992px)
+                    width: 400px
+
+                @media (min-width: 992px)
+                    width: 475px
+
+                &-overlay
+                    height: 200px
+                    max-height: 40%
+                    position: absolute
+                    z-index: 8
+                    bottom: 0
+                    width: 100%
+                    background: rgba(255,255,255,0)
+                    background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%)
+                    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,0)), color-stop(100%, rgba(0,0,0,1)))
+                    background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%)
+                    background: -o-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%)
+                    background: -ms-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%)
+                    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%)
+                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000', GradientType=0 )
+
+            &__image
+                background: #888 center / cover no-repeat
+                width: 100%
+                height: 100%
+                transition: all .5s
+
+            &__content
+                padding: 42px 22px 49px
+
+                @media (min-width: 768px)
+                    width: calc(100% - 296px)
+                    display: flex
+                    flex-flow: column
+                    justify-content: center
+                    padding-left: 42px
+                    padding-right: 30px
+
+                @media (min-width: 992px)
+                    width: calc(100% - 400px)
+                    padding-left: 50px
+                    padding-right: 50px
+
+                @media (min-width: 1200px)
+                    width: calc(100% - 475px)
+                    padding-left: 66px
+                    padding-right: 66px
+
+                &-name
+                    @extend %font-title
+                    font-size: 36px
+                    color: #393939
+                    letter-spacing: 0
+                    line-height: 1
+                    margin-bottom: 5px
+
+                    @media (min-width: 992px)
+                        margin-bottom: 10px
+
+                    @media (min-width: 1200px)
+                        font-size: 42px
+                        margin-top: 20px
+
+
+                &-role
+                    @extend %font-bold
+                    color: #9A9A9A
+                    font-size: 14px
+                    line-height: 1
+                    margin-bottom: 30px
+
+                &-info
+                    @extend %font-regular
+                    color: #393939
+                    font-size: 14px
+                    line-height: 22px
+                    margin-bottom: 30px
+
+                    @media (min-width: 992px)
+                        font-size: 16px
+                        line-height: 24px
+                        max-width: 428px
+
+                    @media (min-width: 1200px)
+                        max-width: 460px
+
+                &-cta
+                    &-button
+                        @extend %font-bold
+                        font-size: 14px
+                        color: #4E9D2D
+                        letter-spacing: 0
+                        background: none
+                        border: 0
+                        outline: 0
+
+                        &:hover
+                            color: darken(#4E9D2D, 10%)
+                            text-decoration: none
+
+    &__profile-modal
+        @media (min-width: 768px)
+            max-width: 690px !important
+
+        @media (min-width: 992px)
+            max-width: 930px !important
+
+        @media (min-width: 1200px)
+            max-width: 1110px !important
+
+        .modal-content
+            border-radius: 0
+
+        .modal-header,
+        .modal-footer
+            border: 0
+            button.close
+              color: transparent
+              &::after
+                content: ''
+                width: 20px
+                height: 20px
+                display: inline-block
+                background-size: 20px 20px
+                background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.21739 8L15.7101 1.47826C16.058 1.13043 16.058 0.57971 15.7101 0.26087C15.3623 -0.0869565 14.8116 -0.0869565 14.4928 0.26087L8 6.78261L1.47826 0.26087C1.13043 -0.0869565 0.57971 -0.0869565 0.26087 0.26087C-0.0869565 0.608696 -0.0869565 1.15942 0.26087 1.47826L6.75362 8L0.26087 14.5217C-0.0869565 14.8696 -0.0869565 15.4203 0.26087 15.7391C0.434783 15.913 0.666667 16 0.869565 16C1.07246 16 1.30435 15.913 1.47826 15.7391L8 9.21739L14.5217 15.7391C14.6957 15.913 14.9275 16 15.1304 16C15.3333 16 15.5652 15.913 15.7391 15.7391C16.087 15.3913 16.087 14.8406 15.7391 14.5217L9.21739 8Z' fill='%23666666'/%3E%3C/svg%3E%0A");
+
+        .profile-modal
+
+            &-body
+                display: flex
+                @media (min-width: 992px)
+                    padding: 30px
+
+            &__image-container
+                display: none
+
+                @media (min-width: 768px)
+                    margin-top: 5px
+                    width: 180px
+                    display: block
+
+                @media (min-width: 992px)
+                    width: 265px
+
+                @media (min-width: 1200px)
+                    width: 308px
+
+                img
+                    max-width: 100%
+
+            &__content
+                padding-right: 24px
+
+                @media (min-width: 768px)
+                    width: calc(100% - 180px)
+                    padding-left: 30px
+                    padding-right: 30px
+
+                @media (min-width: 992px)
+                    width: calc(100% - 265px)
+                    padding-left: 36px
+                    padding-right: 36px
+
+                @media (min-width: 1200px)
+                    width: calc(100% - 308px)
+                    padding-left: 52px
+                    padding-right: 52px
+
+                &-name
+                    @extend %font-title
+                    font-size: 32px
+                    color: #393939
+                    letter-spacing: 0
+                    line-height: 1
+                    margin-bottom: 5px
+
+                    @media (min-width: 768px)
+                        font-size: 48px
+
+                    @media (min-width: 992px)
+                        font-size: 52px
+                        margin-bottom: 10px
+
+                    @media (min-width: 1200px)
+                        font-size: 60px
+
+
+                &-role
+                    @extend %font-bold
+                    color: #9A9A9A
+                    font-size: 14px
+                    line-height: 1
+                    margin-bottom: 16px
+
+                    @media (min-width: 768px)
+                        font-size: 18px
+
+                    @media (min-width: 992px)
+                        margin-bottom: 24px
+
+                    @media (min-width: 1200px)
+                        font-size: 20px
+
+                &-info
+                    @extend %font-regular
+                    color: #767676
+                    font-size: 12px
+                    line-height: 2
+
+                    @media (min-width: 768px)
+                        font-size: 14px
+
+                    @media (min-width: 1200px)
+                        font-size: 16px
+                        line-height: 28px
+
+            &__icons
+                width: 36px
+                height: 36px
+                cursor: pointer
+                transition: opacity 0.2s
+                padding: 5px
+
+                &.is-disable
+                    opacity: 0.2
+
+
+
+    .people-listing
+
+        &__bar
+            background-color: #32556E
+            color: #fff
+            padding-top: 32px
+            padding-bottom: 30px
+
+            @media (min-width: 768px)
+                padding-top: 32px
+                padding-bottom: 30px
+
+            @media (min-width: 992px)
+                padding-top: 38px
+                padding-bottom: 34px
+
+            @media (min-width: 1200px)
+                padding-top: 36px
+                padding-bottom: 32px
+
+            &-content
+                @media (min-width: 768px)
+                    display: flex
+
+        &__select
+
+            &-field
+                max-width: 245px
+
+            &-label
+                @extend %font-title
+                font-size: 18px
+                color: #fff
+                letter-spacing: 0
+                margin-right: 22px
+                margin-bottom: 16px
+
+                @media (min-width: 768px)
+                    font-size: 22px
+                    margin-right: 24px
+                    margin-bottom: 0
+
+                @media (min-width: 992px)
+                    font-size: 24px
+                    margin-right: 44px
+
+                @media (min-width: 1200px)
+                    font-size: 28px
+                    margin-right: 50px
+
+        &__cards
+            padding-top: 50px
+            padding-bottom: 95px
+
+            @media (min-width: 768px)
+                padding-top: 55px
+                padding-bottom: 75px
+
+            @media (min-width: 992px)
+                padding-top: 70px
+                padding-bottom: 100px
+
+            @media (min-width: 1200px)
+                padding-top: 80px
+                padding-bottom: 115px
+
+            @media (min-width: 1920px)
+                padding-top: 98px
+                padding-bottom: 130px
+
+            &--featured
+                background: #888 center / cover no-repeat
+                height: 350px
+                margin-bottom: 20px
+                display: none
+                position: relative
+
+                @media (min-width: 768px)
+                    display: block
+                    height: 380px
+                    margin-bottom: 32px
+
+                @media (min-width: 992px)
+                    height: 475px
+                    margin-bottom: 50px
+
+                @media (min-width: 1200px)
+                    height: 560px
+
+                @media (min-width: 1920px)
+                    height: 590px
+
+                .people-listing-item
+
+                    &__content
+                        @media (min-width: 768px)
+                            position: absolute
+                            max-width: 242px
+                            right: 50px
+                            bottom: 35px
+
+                        @media (min-width: 992px)
+                            max-width: 320px
+                            right: 95px
+                            bottom: 50px
+
+                        @media (min-width: 1920px)
+                            max-width: 350px
+                            right: 195px
+                            bottom: 80px
+
+                    &__title
+                        margin: 0
+                        @extend %font-title
+                        font-size: 38px
+                        line-height: 38px
+                        color: #fff
+                        letter-spacing: 0
+
+                        @media (min-width: 768px)
+                            font-size: 43px
+                            line-height: 43px
+
+                        @media (min-width: 992px)
+                            font-size: 52px
+                            line-height: 50px
+
+                    &__role
+                        margin: 0
+                        opacity: 0.7
+                        @extend %font-regular
+                        font-size: 14px
+                        color: #fff
+                        letter-spacing: 0
+
+                        @media (min-width: 992px)
+                            font-size: 16px
+
+                    &__location
+                        margin: 0
+                        opacity: 0.7
+                        @extend %font-bold
+                        font-size: 14px
+                        color: #fff
+                        letter-spacing: 0
+
+                        @media (min-width: 992px)
+                            font-size: 16px
+
+            &-wrapper
+                @media (min-width: 768px)
+                    display: -ms-grid
+                    display: grid
+                    grid-gap: 28px
+                    grid-template-columns: 1fr 1fr
+                    -ms-grid-columns: 1fr 1fr
+
+                @media (min-width: 992px)
+                    grid-gap: 30px
+                    grid-template-columns: 1fr 1fr 1fr
+                    -ms-grid-columns: 1fr 1fr 1fr
+
+                @media (min-width: 1200px)
+                    grid-gap: 60px
+
+
+            &--item
+                cursor: pointer
+                height: 350px
+                margin-bottom: 20px
+                position: relative
+                overflow: hidden
+
+                @media (min-width: 768px)
+                    height: 382px
+                    margin-bottom: 0
+
+                @media (min-width: 992px)
+                    height: 375px
+
+                @media (min-width: 1200px)
+                    height: 404px
+
+                &:hover
+                    .people-listing-item__image
+                        transform: scale(1.05)
+
+                    .people-listing-item__cta
+                        &:before
+                            width: 100%
+
+                .people-listing-item
+
+                    &__image
+                        background: #888 center / cover no-repeat
+                        width: 100%
+                        height: 100%
+                        transition: all .5s
+
+                    &__content
+                        position: absolute
+                        z-index: 9
+                        bottom: 25px
+                        padding-left: 25px
+                        padding-right: 45px
+
+                    &__title
+                        margin: 0
+                        margin-bottom: 5px
+                        @extend %font-title
+                        font-size: 30px
+                        color: #fff
+                        letter-spacing: 0
+
+                    &__role
+                        margin: 0
+                        opacity: 0.7
+                        @extend %font-regular
+                        font-size: 14px
+                        color: #fff
+                        letter-spacing: 0
+                        font-weight: bold
+                        line-height: 18px
+
+                    &__location
+                        margin: 0
+                        opacity: 0.7
+                        @extend %font-bold
+                        font-size: 14px
+                        color: #fff
+                        letter-spacing: 0
+
+                    &__cta
+                        color: #fff
+                        @extend %font-bold
+                        font-size: 14px
+                        letter-spacing: 0
+                        margin-top: 18px
+                        position: relative
+                        display: inline-block
+                        transition: 0.2s ease
+                        background: none
+                        border: 0
+                        padding-left: 0
+                        padding: 0
+
+                        &:before
+                            transition: 0.2s ease
+                            content: ""
+                            position: absolute
+                            height: 2px
+                            background-color: #fff
+                            display: block
+                            top: 100%
+                            left: 0
+                            width: 0
+
+                        &:hover
+                            text-decoration: none
+
+
+                    &__overlay
+                        height: 199px
+                        position: absolute
+                        z-index: 8
+                        bottom: 0
+                        width: 100%
+                        background: rgba(255,255,255,0)
+                        background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%)
+                        background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,0)), color-stop(100%, rgba(0,0,0,1)))
+                        background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%)
+                        background: -o-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%)
+                        background: -ms-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%)
+                        background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%)
+                        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000', GradientType=0 )
+
+            &-load-more
+                text-align: center
+                padding-top: 40px
+
+                @media (min-width: 768px)
+                    padding-top: 50px
+
+                @media (min-width: 992px)
+                    padding-top: 60px
+
+                @media (min-width: 992px)
+                    padding-top: 80px
+
+
+
+
+

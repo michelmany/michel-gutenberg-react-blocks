@@ -1,0 +1,321 @@
+.wp-block-ldc-multi-tab-menu-images
+
+    &__tabs-menu
+
+        .tab-content
+            background: #F2F2F2
+            padding-top: 4rem
+            padding-bottom: 80px
+
+            @media (min-width: 1200px)
+                padding-top: 6rem
+
+        .nav.nav-pills
+            overflow-x: auto
+            overflow-y: hidden
+            white-space: nowrap
+            display: block
+            -webkit-overflow-scrolling: touch
+            -ms-overflow-style: -ms-autohiding-scrollbar
+            &::-webkit-scrollbar
+                display: none
+
+            @media (min-width: 768px)
+                display: flex
+
+            @media (min-width: 1200px)
+                max-width: 1110px
+                margin-left: auto
+                margin-right: auto
+
+            .nav-link
+                display: inline-block
+                @extend %font-regular
+                font-size: 16px
+                border-bottom: 3px solid transparent
+                border-radius: 0
+                background: #fff
+                letter-spacing: 0
+                text-align: center
+                color: rgba(#3A3A3A, 0.5)
+                letter-spacing: 0
+                outline: none
+
+
+                @media (min-width: 768px)
+                    min-width: calc(100% /3)
+                    font-size: 18px
+                    border-bottom: 2px solid transparent
+
+
+                &.active
+                    border-bottom: 3px solid #555555
+                    @extend %font-bold
+                    color: #3A3A3A
+                    background: #fff
+                    outline: none
+
+
+                    @media (min-width: 768px)
+                        border-bottom: 2px solid #555555
+
+                &:focus,
+                &:active
+                    outline: none
+
+    &__tabs
+
+        &-headline,
+        h3
+            @extend %font-title
+            font-size: 24px
+            color: #353535
+            letter-spacing: 0
+            line-height: 32px
+            margin-bottom: 15px
+
+            @media (min-width: 1200px)
+                font-size: 28px
+                line-height: 1.25
+        &-copy,
+        p
+            @extend %font-regular
+            font-size: 14px
+            color: rgba(#777777, 0.8)
+            letter-spacing: 0
+            line-height: 26px
+
+            @media (min-width: 1200px)
+                font-size: 16px
+
+        &-content
+            margin-bottom: 3rem
+
+            @media (min-width: 1200px)
+                margin-bottom: 4rem
+
+        &-accordions
+
+            .accordion
+                &-heading
+                    transition: 0.4s
+                    padding: 0
+                    width: 100%
+                    background: transparent
+                    text-align: left
+                    @extend %font-title
+                    font-weight: bold
+                    font-size: 18px
+                    color: #3A3A3A
+                    letter-spacing: 0
+                    line-height: 56px
+                    outline: none
+                    border: 0
+                    border-bottom: 1px solid #D8D8D8
+                    margin-bottom: 15px
+                    display: flex
+                    justify-content: space-between
+                    align-items: center
+
+                    @media (min-width: 768px)
+                        font-size: 24px
+
+
+                    &.collapsed
+                        transition: 0.4s
+                        font-weight: normal
+
+                        .ldc-icon
+                            transition: 0.4s
+                            transform: rotate(180deg)
+
+                    .ldc-icon
+                        position: relative
+                        top: 5px
+                        transition: 0.4s
+                        margin-left: 15px
+                        width: 16px
+                        height: 9px
+
+                        @media (min-width: 768px)
+                            width: 21px
+                            height: 12px
+
+
+                &-body
+                    @extend %font-regular
+                    font-size: 12px
+                    line-height: 24px
+                    color: rgba(#777777, 0.75)
+                    padding-bottom: 35px
+
+                    @media (min-width: 768px)
+                        font-size: 14px
+
+                    @media (min-width: 992px)
+                        line-height: 28px
+                        font-size: 16px
+                        max-width: 80%
+
+
+
+    &-featured-person
+        background: #fff
+        width: 100%
+        // margin-top: 65px
+        margin-bottom: 50px
+
+        @media (min-width: 768px)
+            height: 385px
+            display: flex
+
+        @media (min-width: 992px)
+            height: 460px
+
+        &__image-container
+            background: gray
+            height: 305px
+
+            @media (min-width: 768px)
+                width: 296px
+                height: 100%
+
+            @media (min-width: 992px)
+                width: 371px
+
+            @media (min-width: 1200px)
+                width: 500px
+
+        &__image
+            background: transparent center / cover no-repeat
+            width: 100%
+            height: 100%
+
+        &__content
+            padding: 38px 22px 46px
+
+            @media (min-width: 768px)
+                display: flex
+                flex-direction: column
+                justify-content: center
+                width: calc(100% - 296px)
+                padding: 38px 34px 46px
+
+            @media (min-width: 768px)
+                width: calc(100% - 371px)
+                padding: 38px 34px 46px
+
+            @media (min-width: 992px)
+                width: calc(100% - 371px)
+                padding: 38px 49px 46px
+
+            @media (min-width: 1200px)
+                width: calc(100% - 500px)
+                padding: 38px 76px 46px
+
+        &__name
+            @extend %font-title
+            font-size: 30px
+            color: #393939
+            letter-spacing: 0
+            line-height: 43px
+            margin-bottom: 12px
+
+            @media (min-width: 992px)
+                font-size: 42px
+                line-height: 56px
+
+        &__role
+            @extend %font-bold
+            font-size: 14px
+            color: rgba(#393939, 0.7)
+            letter-spacing: 0
+            line-height: 24px
+            margin-bottom: 25px
+
+            @media (min-width: 992px)
+                font-size: 16px
+                line-height: 24px
+                max-width: 341px
+
+        &__copy
+            @extend %font-regular
+            font-size: 14px
+            color: rgba(#393939, 0.7)
+            letter-spacing: 0
+            line-height: 24px
+            margin-bottom: 0
+
+            @media (min-width: 992px)
+                font-size: 16px
+                line-height: 24px
+                max-width: 341px
+
+
+    &-boards
+
+        &-item
+
+            padding: 30px 0 35px
+            border-bottom: 1px solid #D8D8D8
+
+            &__header
+                margin-bottom: 22px
+
+            &__headline
+                @extend %font-title
+                font-size: 28px
+                color: #32556E
+                letter-spacing: 0
+                margin-bottom: 0
+
+                @media (min-width: 768px)
+                    font-size: 30px
+
+                @media (min-width: 992px)
+                    font-size: 30px
+
+                @media (min-width: 1200px)
+                    font-size: 30px
+
+            &__subline
+                @extend %font-regular
+                font-size: 14px
+                color: #909090
+                letter-spacing: 0
+                line-height: 24px
+
+            &__copy
+                @extend %font-regular
+                font-size: 16px
+                color: #4A4A4A
+                letter-spacing: 0
+
+            &__list
+                width: calc(100% / 3)
+
+                &-columns
+                    @media (min-width: 768px)
+                        display: flex
+                        justify-content: space-between
+                &-item
+                    padding-left: 15px
+                    list-style-type: disc
+                    li
+                        @extend %font-regular
+                        font-size: 16px
+                        color: #4A4A4A
+                        letter-spacing: 0
+                        margin-bottom: 8px
+
+                &-title
+                    @extend %font-bold
+                    font-size: 16px
+                    color: #4A4A4A
+                    letter-spacing: 0
+                    margin-bottom: 12px
+
+
+
+.collapse:not(.show)
+    display: none

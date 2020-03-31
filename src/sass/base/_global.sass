@@ -1,0 +1,54 @@
+\:root
+    --chart-bar-width: 75%
+
+body
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+
+a.ldc-button
+    -webkit-appearance: none
+    -moz-appearance: none
+    appearance: none
+    text-decoration: none
+
+.ldc-button
+    transition: 0.2s
+    @extend %font-regular
+    font-size: 14.4px
+    color: #fff
+    letter-spacing: 0
+    text-align: center
+    background-color: #000
+    line-height: 0
+    min-height: 50px
+    border: 0
+    padding: 18px 45px
+
+    &--green
+        background-color: #4E9D2D
+
+        &:hover
+            transition: 0.2s
+            color: #fff
+            text-decoration: none
+            background: darken(#4E9D2D, 10%)
+
+.container
+    padding-right: 15px
+    padding-left: 15px
+    margin-right: auto
+    margin-left: auto
+
+    @media (min-width: 768px)
+        max-width: 750px
+
+    @media (min-width: 992px)
+        max-width: 970px
+
+    @media (min-width: 1200px)
+        max-width: 1170px
+
+.d-block
+    display: block
+
+

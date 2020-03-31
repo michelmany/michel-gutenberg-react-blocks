@@ -1,0 +1,27 @@
+.wp-block-ldc-multi-tab-menu-images
+    .nav.nav-pills
+        a
+            text-decoration: none
+            outline: none
+            box-shadow: none
+
+    &-featured-person
+
+        &__image-container
+
+            @media (min-width: 1200px)
+                width: 400px
+
+        &__content
+
+            @media (min-width: 1200px)
+                width: calc(100% - 400px)        
+                padding: 38px 50px 46px
+
+    &-inspector-control
+        &__accordions-title
+            display: flex
+            align-items: center
+            
+            svg
+                margin-right: 5px

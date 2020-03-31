@@ -1,0 +1,139 @@
+.wp-block-ldc-image-and-video-library
+    margin-top: 25px
+    padding-bottom: 50px
+
+    &__filter
+
+        &.nav-pills
+
+            .nav-link
+                background: #fff
+                padding-left: 0
+                padding-right: 0
+                border-radius: 0
+                transition: 0.4s
+                cursor: pointer
+                padding: 5px 0
+                font-size: 14px
+                color: rgba(#333333, 0.5)
+                letter-spacing: 0
+                text-transform: uppercase
+                margin-right: 50px
+                text-decoration: none
+                outline: none
+                box-shadow: none
+                border: 0
+                border-bottom: 1px solid transparent
+                @extend %font-regular
+
+                &:hover,
+                &:focus,
+                &:active,
+                &.active
+                    box-shadow: none
+                    outline: none
+                    text-decoration: none
+                    background: #fff
+                    font-weight: bold
+                    color: rgba(#333333, 0.75)
+                    border-bottom: 1px solid #676767
+
+    &__items
+        padding-top: 38px
+        padding-bottom: 38px
+
+        @media (min-width: 1200px)
+            padding-top: 55px
+            padding-bottom: 55px
+
+    &__item
+        margin-bottom: 40px
+
+        .item
+            &__image
+                background: $gray center / cover no-repeat
+                height: 195px
+                width: 100%
+                margin-bottom: 12px
+                position: relative
+                cursor: pointer
+
+                @media (min-width: 768px)
+                    height: 210px
+
+                @media (min-width: 992px)
+                    height: 250px
+
+                &:hover
+                    .item__video-overlay
+                        background: rgba(#000, 0.6)
+
+                    .ldc-icon
+                        transform: scale(1.1)
+
+            &__video-overlay
+                transition: 0.4s
+                display: flex
+                position: absolute
+                overflow: hidden
+                width: 100%
+                height: 100%
+                top: 0
+                left: 0
+                background: rgba(#000, 0.4)
+                z-index: 10
+                justify-content: center
+                align-items: center
+
+                .ldc-icon
+                    transition: 0.4s
+                    position: absolute
+                    z-index: 20
+                    width: 45px
+                    height: 45px
+
+            &__title
+                font-size: 20px
+                color: #333333
+                letter-spacing: 0
+                margin-bottom: 5px
+                line-height: 24px
+                @extend %font-title
+
+            &__details
+                font-size: 12px
+                color: rgba(#535353, 0.75)
+                text-transform: uppercase
+                @extend %font-regular
+
+            &__cta
+                display: flex
+                align-items: center
+                margin-top: 15px
+                box-shadow: none
+                outline: none
+                text-decoration: none
+
+                &:hover,
+                &:focus,
+                &:active
+                    text-decoration: none
+
+                .ldc-icon
+                    width: 20px
+                    height: 20px
+                    margin-right: 8px
+
+                span
+                    font-size: 12px
+                    color: #4E9D2D
+                    position: relative
+                    top: 1px
+                    transition: 0.2s
+                    @extend %font-bold
+
+                    &:hover
+                        color: darken(#4E9D2D, 10%)
+
+    &__loadmore
+        margin-bottom: 50px

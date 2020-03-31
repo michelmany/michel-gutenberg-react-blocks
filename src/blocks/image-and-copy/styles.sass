@@ -1,0 +1,101 @@
+.wp-block-ldc-mop-image-and-copy
+
+    .image-and-copy-block
+
+        @media (min-width: 992px)
+            display: flex
+            margin: 56px 0 calc(56px * 2)
+
+        @media (min-width: 1200px)
+            margin: 74px 0 calc(74px * 2)
+
+        @media (min-width: 1920px) 
+            margin: 82px 0 calc(82px * 2)
+
+        &__image-container
+            background: gray center / cover no-repeat
+            min-height: 284px
+            width: 100%
+
+            @media (min-width: 768px)
+                min-height: 350px
+
+            @media (min-width: 992px)
+                min-height: 100%
+                width: 420px
+
+            @media (min-width: 1200px)
+                width: 705px
+
+            @media (min-width: 1920px)
+                width: 50%
+
+        &__content
+            background: #F3F3F3
+            padding: 40px 15px 58px
+
+            @media (min-width: 768px)
+                padding: 58px 40px 72px
+
+            @media (min-width: 992px)
+                padding: 90px 30px 82px
+                width: calc(100% - 420px)   
+                position: relative
+                top: 56px        
+
+            @media (min-width: 1200px)
+                padding: 134px 65px 144px
+                width: calc(100% - 705px)    
+                top: 74px
+
+            @media (min-width: 1920px)
+                padding: 132px 65px 132px
+                width: 50%   
+                top: 82px       
+
+
+            &-title
+                font-family: UtopiaStd-Disp
+                font-size: 32px
+                color: #333333
+                letter-spacing: 0
+                line-height: 40px
+
+                @media (min-width: 768px)
+                    font-size: 42px
+                    line-height: 50px
+                    max-width: 505px
+
+                @media (min-width: 1200px)
+                    font-size: 52px
+                    line-height: 59px
+                    max-width: 505px
+
+                @media (min-width: 1440px)
+                    font-size: 60px
+                    line-height: 65px
+                    margin-bottom: 30px
+
+            &-copy
+                opacity: 1
+                font-family: UniversLTStd
+                font-size: 14px
+                color: #565656
+                letter-spacing: 0
+                line-height: 26px
+                margin-bottom: 42px
+
+                @media (min-width: 768px)
+                    font-size: 16px       
+                    margin-bottom: 58px
+
+                @media (min-width: 992px)
+                    max-width: 532px
+
+                @media (min-width: 1200px)
+                    max-width: 473px
+
+                @media (min-width: 1440px)
+                    max-width: 540px
+
+    

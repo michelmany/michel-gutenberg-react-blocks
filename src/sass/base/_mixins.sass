@@ -1,0 +1,29 @@
+
+@mixin icon-button-scale-on-hover
+    cursor: pointer
+    &:hover
+        transform: scale(1.1)
+
+
+@function tracking( $target )
+  @return ($target / 1000) * 1em
+
+
+@mixin tracking( $target )
+  letter-spacing: tracking( $target )
+
+
+@mixin placeholder
+    &::-webkit-input-placeholder
+        @content
+    
+    &:-moz-placeholder /* Firefox 18- */
+        @content
+    
+    &::-moz-placeholder  /* Firefox 19+ */
+        @content
+    
+    &:-ms-input-placeholder
+        @content
+
+    

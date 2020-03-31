@@ -1,0 +1,44 @@
+<div class="wp-block-ldc-mop-join-our-team-search lazyload" data-bg="{{ attributes.bgImage }}">
+
+  <div class="wp-block-ldc-mop-join-our-team-search__cover"></div>
+
+  <div class="container">
+    <div id="join-our-team-search" class="join-our-team-search">
+
+      <h2 class="join-our-team-search__title default-block-heading">{{ attributes.title }}</h2>
+
+      <form method="post" action="/careers/join-ldc/" class="form-inline">
+        <div class="join-our-team-search__fields">
+          <div class="join-our-team-search__fields-select">
+            <label>{{ attributes.categoryLabel }}</label>
+            <select
+              id="category-select"
+              name="category-select"
+              class="ldc-custom-select ldc-custom-select--white-one">
+              <option value="0">Select a Job Category</option>
+              {% for category in array_categories %}
+                <option value="{{category}}">{{category}}</option>
+              {% endfor %}
+            </select>
+          </div>
+          <div class="join-our-team-search__fields-select">
+            <label>{{ attributes.locationLabel }}</label>
+            <select
+              id="location-select"
+              name="location-select"
+              class="ldc-custom-select ldc-custom-select--white-one">
+              <option value="0">Select a location</option>
+              {% for country in array_country %}
+                <option value="{{country}}">{{country}}</option>
+              {% endfor %}
+            </select>
+          </div>
+          <div class="join-our-team-search__button-container">
+            <input type="submit" value="Search" class="btn btn-primary ldc-btn-green">
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+</div>

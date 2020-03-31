@@ -1,0 +1,96 @@
+[
+    {
+        "name": "Board Members",
+        "slug": "board-members",
+        "headline":
+            "Our Supervisory Board are the driving force behind Louis Dreyfus Company. They oversee and advise Management in performing its tasks and setting the direction of the Group’s business, including Group strategy. They address risk and compliance matters inherent to the business, as well as approve all financial statements.",
+        "member": {
+            "imageUrl": "",
+            "name": "Margarita Louis-Dreyfus",
+            "role": "Chairperson of the Supervisory Board, Louis Dreyfus Holding B.V.",
+            "copy":
+                "Non-Executive Chairperson of the Supervisory Board, Louis Dreyfus Company Holdings B.V."
+        },
+        "boards": [
+            {
+                "headline": "Supervisory Board",
+                "subline": "(Louis Dreyfus Company Holdings B.V.)",
+                "lists": [
+                    {
+                        "title": "",
+                        "items": "Margarita Louis-Dreyfus (Non-Executive Chairperson)"
+                    }
+                ]
+            },
+            {
+                "headline": "Supervisory Board Committees",
+                "subline": "",
+                "lists": [
+                    { "title": "Audit Committee", "items": "Victor Balli (Chairperson)" },
+                    { "title": "Strategy Committee", "items": "Michel Demaré (Chairperson)" },
+                    {
+                        "title": "Compensation, Nomination and Governance Committee",
+                        "items": "Mehdi El Glaoui (Chairperson)"
+                    }
+                ]
+            },
+            {
+                "headline": "Managing Board",
+                "subline": "",
+                "lists": [
+                    {
+                        "title": "Louis Dreyfus Company Holdings B.V.",
+                        "items": "Maurice Kreft"
+                    },
+                    { "title": "Louis Dreyfus Company B.V.", "items": "Ian McIntosh" }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Policies",
+        "slug": "policies",
+        "headline":
+            "A malesuada adipiscing placerat imperdiet vitae a adipiscing duis porta faucibus arcu sociosqu metus eros dignissim sodales.",
+        "copy":
+            "Magna quisque a parturient eu egestas ad ultrices nam accumsan ut ultrices est vestibulum sit consequat ullamcorper et a diam lobortis.Varius nam scelerisque eu at erat turpis eros tortor lacinia neque proin inceptos leo vestibulum.Sem a mi ac.",
+        "accordions": [
+            {
+                "title": "Code of conduct",
+                "copy":
+                    "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. "
+            },
+            {
+                "title": "Terms & Conditions",
+                "copy":
+                    "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. "
+            },
+            {
+                "title": "Sustainability Policy",
+                "copy":
+                    "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. "
+            },
+            {
+                "title": "Human Rights Policy",
+                "copy":
+                    "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. "
+            },
+            {
+                "title": "Anti-Corrupt / Anti-Bribery Policy",
+                "copy":
+                    "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. "
+            }
+        ]
+    },
+    {
+        "name": "Risk & Compliance",
+        "slug": "risk-compliance",
+        "headline":
+            "Lorem ipsum dolor sit amet, ei oblique adolescens vel, admodum concludaturque has in. Eum et purto integre eripuit. Sit erat ignota causae ad. In homero expetendis vel. Pri at saepe voluptua fabellas. Aperiam elaboraret cum id,nam nibh ancillae eu, fastidii atomorum expetendis usu an.",
+        "copy":
+            "Lorem ipsum dolor sit amet, ei oblique adolescens vel, admodum concludaturque has in. Eum et purto integre eripuit. Sit erat ignota causae ad. In homero expetendis vel. Pri at saepe voluptua fabellas. Aperiam elaboraret cum id, nam nibh ancillae eu, fastidii atomorum expetendis usu an.<br />Lorem ipsum dolor sit amet, ei oblique adolescens vel, admodum concludaturque has in. Eum et purto integre eripuit. Sit erat ignota causae ad. In homero expetendis vel. Pri at saepe voluptua fabellas. Aperiam elaboraret cum id, nam nibh ancillae eu, fastidii atomorum expetendis usu an.",
+        "accordions": [
+            { "title": "Our governance structure", "copy": "" }
+        ]
+    }
+]

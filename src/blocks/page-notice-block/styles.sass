@@ -1,0 +1,44 @@
+.wp-block-ldc-page-notice-block
+    border: 1px solid rgba(0, 0, 0, 0.50)
+    padding: 30px 50px
+    margin: 0 0 30px 0
+    overflow: hidden
+    position: relative
+
+    &__disabled
+        display: none
+
+    &__title
+        @extend %font-title
+        color: #32556E
+        font-size: 30px
+        line-height: 50px
+
+    &__copy
+        font-size: 12px
+        line-height: 16px
+
+    &__link
+        font-weight: bold
+        font-size: 12px
+        line-height: 16px
+        color: #4E9D2D
+
+        &:hover
+            text-decoration: none
+            color: #4E9D2D
+
+        &:focus
+            text-decoration: none
+            color: #4E9D2D
+
+    &__close-box
+        text-align: center
+        width: 100%
+        display: block
+        position: relative
+
+    &__close
+        position: absolute
+        right: 5px
+        cursor: pointer

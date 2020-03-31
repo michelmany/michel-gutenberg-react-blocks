@@ -1,0 +1,56 @@
+<div class="wp-block-ldc-mop-people-listing">
+    <div class="people-listing__bar">
+        <div class="container">
+            <div class="people-listing__bar-content ">
+                <div class="people-listing__select-label">Filter People by Region:</div>
+                <select class="people-listing__select-field ldc-custom-select ldc-custom-select--white-one">
+                    <option selected>Open this select menu</option>
+                    <option value="3">Asia</option>
+                    <option value="2">Africa</option>
+                    <option value="3">Europe</option>
+                    <option value="1">South America</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="people-listing__cards">
+        <div class="container">
+
+            <div class="people-listing__cards--featured" 
+                 style="background-image: url('https://ldc2020-dev-uploads.fra1.cdn.digitaloceanspaces.com/yan.jpg')">
+                <div class="people-listing-item__content">
+                    <div class="people-listing-item__overlay"></div>
+                    <div class="people-listing-item__quote">“{{ attributes.quote }}”</div>
+                    <h2 class="people-listing-item__title">Yan</h2>
+                    <p class="people-listing-item__role">China Oilseeds Crush Manager</p>
+                    <p class="people-listing-item__location">Beijing, China</p>
+                </div>
+            </div>
+
+            <div class="people-listing__cards-wrapper">
+
+                {% for person in people %}
+                    
+                <div class="people-listing__cards--item people-listing-item">
+                    <a href="#" class="people-listing-item__link"></a>
+                    <div class="people-listing-item__overlay"></div>
+                    <div class="people-listing-item__content">
+                        <h2 class="people-listing-item__title">{{ person.name }}</h2>
+                        <p class="people-listing-item__role">{{ person.role }}</p>
+                        <p class="people-listing-item__location">{{ person.location }}</p>
+                    </div>
+                    <div class="people-listing-item__image"
+                        style="background-image: url({{ person.thumbnail.src }})">
+                    </div>
+                </div>
+
+                {% endfor %}
+            
+            </div>
+            <div class="people-listing__cards-load-more"> 
+                <button class="ldc-button ldc-button--green">Load more people</button>
+            </div>        
+        </div>
+    </div>
+
+</div>
