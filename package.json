@@ -13,7 +13,7 @@
   "dependencies": {
     "@react-google-maps/api": "^1.8.0",
     "@wordpress/blocks": "^6.7.2",
-    "axios": "0.19.1",
+    "axios": "0.21.1",
     "bootstrap": "^4.4.1",
     "es6-promise": "^4.2.8",
     "isotope-layout": "^3.0.6",
